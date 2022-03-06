@@ -7,8 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8F1BD0E-69C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{EA6E9E1E-D7E6-4B32-AC86-96F36DDEAC52}"
 	ProjectSection(SolutionItems) = preProject
-		.env = .env
-		docker-compose.yml = docker-compose.yml
+		src\deploy\.env = src\deploy\.env
+		src\deploy\docker-compose.override.yml = src\deploy\docker-compose.override.yml
+		src\deploy\docker-compose.yml = src\deploy\docker-compose.yml
 	EndProjectSection
 EndProject
 Global
