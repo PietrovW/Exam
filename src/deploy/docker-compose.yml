@@ -2,7 +2,7 @@ version: "3.5"
 services:
   kafdrop:
     image: obsidiandynamics/kafdrop
-    container_name: kafdrop
+    container_name: kafdrop:${kafdrop_tag}
     restart: "no"
     ports:
       - 9000
@@ -13,7 +13,7 @@ services:
       - kafka
 
   kafka:
-    image: obsidiandynamics/kafka
+    image: bitnami/kafka:${kafka_tag}
     container_name: kafka
     restart: "no"
     ports:
@@ -46,7 +46,7 @@ services:
       - mysql
 
   postgres:
-    image: postgres:12.7
+    image: postgres:${postgres_tag}
     restart: "no"
     container_name: postgres
     ports:
